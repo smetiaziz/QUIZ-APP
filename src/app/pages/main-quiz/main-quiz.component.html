@@ -1,0 +1,16 @@
+<div *ngIf="quiz"  class="quiz-container">
+  <h2>{{ quiz.name }}</h2>
+  <app-question [question]="currentQuestion"></app-question>
+  <app-options [options]="currentQuestion!.options || []" (optionSelected)="onOptionSelected($event)"></app-options>
+  <button *ngIf="currentQuestionIndex > 0" (click)="onPreviousQuestion()" class="quiz-button">Precedent</button>
+  <button *ngIf="currentQuestionIndex < quiz.questions.length - 1" (click)="onNextQuestion()" class="quiz-button">Next</button>
+  <button *ngIf="currentQuestionIndex === quiz.questions.length - 1" (click)="onQuizEnd()" [disabled]="quizEnded" class="quiz-button">Submit Quiz</button>
+</div>
+
+<div *ngIf="quizEnded">
+  <h2>Quiz Ended</h2>
+  <p>Number of correct answers: {{ correctAnswersCount }} out of {{ quiz.questions!.length || 0 }}</p>
+</div>
+
+
+  

@@ -1,0 +1,4 @@
+<div *ngFor="let option of options" class="option-container">
+  <p (click)="selectOption(option)" [ngClass]="{'selected': option === selectedOption, 'unselected': option !== selectedOption}">{{ option }}</p>
+</div>
+

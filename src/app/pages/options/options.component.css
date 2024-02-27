@@ -1,0 +1,21 @@
+
+.option-container {
+    text-align: center; /* Center content horizontally */
+  }
+  .option-container p {
+    display: inline-block; /* Ensure the paragraph takes up only as much width as its content */
+    margin: 10px; /* Remove any default margins */
+    padding: 10px 10px; 
+  }
+  
+.selected {
+    background-color: #FF8383; /* Background color for selected option */
+    color:  black;/* Text color for selected option */
+    width: 200px;
+}
+
+.unselected {
+    background-color: #589caa; /* Background color for unselected options */
+    color: #F7FCFE; /* Text color for unselected options */
+    width: 200px;
+}

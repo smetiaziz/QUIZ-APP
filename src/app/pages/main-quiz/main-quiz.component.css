@@ -1,0 +1,15 @@
+.quiz-container {
+    text-align: center; /* Center content horizontally */
+  }
+  
+  .quiz-button {
+    background-color: blue; /* Blue button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust button size */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    margin-top: 20px;
+    margin-left: 20px; /* Add margin to buttons */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
